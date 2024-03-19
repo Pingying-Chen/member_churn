@@ -1,8 +1,10 @@
 # Massage Business Member Churn Analysis
 
-*This project is a member churn analysis for a small business client. As requested, the datasets provided will not be shared.*
+*This project is a member churn analysis for a small business client.*
 
-## Provided Dataset Description
+*As requested, the datasets provided will not be shared.*
+
+## 1. Provided Dataset Description
 - **Member:** Partial member records with multiple demographics and membership-related data.
 - **Sales:** Transaction details for massage items with member ID.
 - **Deposits:** Transaction details for gift card items with member ID.
@@ -10,17 +12,17 @@
 - **Therapist Metrics:** Therapists' performance metrics with their names.
 - **Therapist Turnover:** Therapists' monthly turnover with their names.
 
-## Train of Thought
+## 2. Train of Thought
 ![Train of Thought](assets/TrainofThought.png)
 
-## Dataset Preparation
+## 3. Dataset Preparation
 [01DataPrep.ipynb](01DataPrep.ipynb)
 - Cleaned and merged datasets for data augmentation, feature mapping and extraction.
 - Used domain knowlegde to augment the member data and balance the churn and unchurn class.
 
 ![Data Prep Steps](assets/DataPrepSteps.png)
 
-## Feature Selection with EDA
+## 4. Feature Selection with EDA
 [02EDA.ipynb](02EDA.ipynb)
 - Further selected features with visualizations and statistical tests.
 
@@ -28,10 +30,10 @@
 ![Categorical Feature Distributions by Class](assets/CatFeaturebyClass.png)
 ![Correlation Heatmap](assets/CorrHeatmap.png)
 
-## Modeling
+## 5. Modeling
 [03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
 
-### Model Input
+### 5.1 Model Input
 - **Dataset:** Including demographics and buying behavior data for customers ever joined the membership.
 - **Dependent variable:** Member_Status(Churn: 1, Unchurn: 0). 
 - **Independent variables:**
@@ -45,13 +47,14 @@
   - **Membership_Duration:** Last purchase date from sales minus Joined_On date.
   - **Join_On_Month:** Calculated from Joined_On date; Seasonality.
 
-### Model Selection
+### 5.2 Model Selection
 - Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy.
 ![Metrics on Test Set](assets/MetricCompare.png)
 - Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
 
-### Final Model
-- **Classification report for training set**
+### 5.3 Final Model
+
+#### Classification report for training set
 
 |                  | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
@@ -62,7 +65,7 @@
 | **macro avg**    | 0.96      | 0.95   | 0.95     | 1499    |
 | **weighted avg** | 0.96      | 0.95   | 0.95     | 1499    |
 
-- **Classification report for test set**
+#### Classification report for test set
 
 |                  | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
@@ -73,10 +76,9 @@
 | **macro avg**    | 0.96      | 0.94   | 0.94     | 643     |
 | **weighted avg** | 0.95      | 0.95   | 0.94     | 643     |
 
-- **Confusion matrix**
-
+#### Confusion matrix
 ![Confusion Matrix](assets/ConfusionMatrix.png)
 
-### Result Interpretation
+### 5.4 Result Interpretation
 [03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
 1. Results were explained in business language.
