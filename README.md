@@ -11,7 +11,7 @@
 - Therapist Turnover: Therapists' monthly turnover with their names.
 
 ## Train of Thought
-
+![Train of Thought](TrainofThought.png)
 
 ## Methods
 ### Dataset Preparation
