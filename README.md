@@ -15,7 +15,7 @@
 
 ## Methods
 ### Dataset Preparation
-[01DataPrep.ipynb](https://github.com/Pingying-Chen/member_churn/blob/main/01DataPrep.ipynb)
+[01DataPrep.ipynb](01DataPrep.ipynb)
 1. Cleaned and merged datasets for data augmentation, feature mapping and extraction.
 2. Used domain knowlegde to augment the member data and balance the churn and unchurn class.
 
@@ -24,12 +24,12 @@
 1. Further selected features with visualizations and statistical tests.
 
 ### Model Selection
-[03ModelCompareInterpret.ipynb](member_churn/blob/main/03ModelCompareInterpret.ipynb)
+[03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
 1. Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy. 
 2. Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
 
 ### Result Interpretation
-[03ModelCompareInterpret.ipynb](member_churn/blob/main/03ModelCompareInterpret.ipynb)
+[03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
 1. Results were explained in business language.
 
 ## Results
