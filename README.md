@@ -52,24 +52,24 @@
 
 #### Final Model
 **Classification report for training set**
-|              | precision | recall | f1-score | support |
-|--------------|-----------|--------|----------|---------|
-| 0            | 0.99      | 0.91   | 0.95     | 654     |
-| 1            | 0.93      | 0.99   | 0.96     | 845     |
-|              |           |        |          |         |
-| accuracy     |           |        | 0.95     | 1499    |
-| macro avg    | 0.96      | 0.95   | 0.95     | 1499    |
-| weighted avg | 0.96      | 0.95   | 0.95     | 1499    |
+|                  | precision | recall | f1-score | support |
+|------------------|-----------|--------|----------|---------|
+| 0                | 0.99      | 0.91   | 0.95     | 654     |
+| 1                | 0.93      | 0.99   | 0.96     | 845     |
+|                  |           |        |          |         |
+| **accuracy**     |           |        | 0.95     | 1499    |
+| **macro avg**    | 0.96      | 0.95   | 0.95     | 1499    |
+| **weighted avg** | 0.96      | 0.95   | 0.95     | 1499    |
 
 **Classification report for test set**
-|              | precision | recall | f1-score | support |
-|--------------|-----------|--------|----------|---------|
-| 0            | 1.00      | 0.87   | 0.93     | 270     |
-| 1            | 0.92      | 1.00   | 0.96     | 373     |
-|              |           |        |          |         |
-| accuracy     |           |        | 0.95     | 643     |
-| macro avg    | 0.96      | 0.94   | 0.94     | 643     |
-| weighted avg | 0.95      | 0.95   | 0.94     | 643     |
+|                  | precision | recall | f1-score | support |
+|------------------|-----------|--------|----------|---------|
+| 0                | 1.00      | 0.87   | 0.93     | 270     |
+| 1                | 0.92      | 1.00   | 0.96     | 373     |
+|                  |           |        |          |         |
+| **accuracy**     |           |        | 0.95     | 643     |
+| **macro avg**    | 0.96      | 0.94   | 0.94     | 643     |
+| **weighted avg** | 0.95      | 0.95   | 0.94     | 643     |
 
 **Confusion matrix**
 ![Confusion Matrix](ConfusionMatrix.png)
