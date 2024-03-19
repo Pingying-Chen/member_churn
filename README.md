@@ -81,4 +81,10 @@
 
 ### 5.4 Result Interpretation
 [03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
-1. Results were explained in business language.
+
+- Plot model coefficient and calculated odds ratio for the all features
+
+![Model Coefficients](assets/ModelCoeff.png)
+![Odds Ratio](assets/OddsRatio.png)
+
+- Interpreted the results with business language
