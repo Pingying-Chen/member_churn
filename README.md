@@ -47,7 +47,16 @@
 1. Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy.
 ![Metrics on Test Set](MetricCompare.png)
 2. Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
-![Classification Report](ClassReport.png)
+
+The classification report for training set is:
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.99      | 0.91   | 0.95     | 654     |
+| 1            | 0.93      | 0.99   | 0.96     | 845     |
+| accuracy     |                    | 0.95     | 1499    |
+| macro avg    | 0.96      | 0.95   | 0.95     | 1499    |
+| weighted avg | 0.96      | 0.95   | 0.95     | 1499    |
+
 ![Confusion Matrix](ConfusionMatrix.png)
 
 #### Result Interpretation
