@@ -11,22 +11,22 @@
 - **Therapist Turnover:** Therapists' monthly turnover with their names.
 
 ## Train of Thought
-![Train of Thought](TrainofThought.png)
+![Train of Thought](assets/TrainofThought.png)
 
 ## Dataset Preparation
 [01DataPrep.ipynb](01DataPrep.ipynb)
 - Cleaned and merged datasets for data augmentation, feature mapping and extraction.
 - Used domain knowlegde to augment the member data and balance the churn and unchurn class.
 
-![Data Prep Steps](DataPrepSteps.png)
+![Data Prep Steps](assets/DataPrepSteps.png)
 
 ## Feature Selection with EDA
 [02EDA.ipynb](02EDA.ipynb)
 - Further selected features with visualizations and statistical tests.
 
-![Numerical Feature Distributions by Class](NumFeaturebyClass.png)
-![Categorical Feature Distributions by Class](CatFeaturebyClass.png)
-![Correlation Heatmap](CorrHeatmap.png)
+![Numerical Feature Distributions by Class](assets/NumFeaturebyClass.png)
+![Categorical Feature Distributions by Class](assets/CatFeaturebyClass.png)
+![Correlation Heatmap](assets/CorrHeatmap.png)
 
 ## Modeling
 [03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
@@ -47,11 +47,12 @@
 
 ### Model Selection
 - Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy.
-![Metrics on Test Set](MetricCompare.png)
+![Metrics on Test Set](assets/MetricCompare.png)
 - Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
 
-#### Final Model
-**Classification report for training set**
+### Final Model
+- **Classification report for training set**
+
 |                  | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
 | 0                | 0.99      | 0.91   | 0.95     | 654     |
@@ -61,7 +62,8 @@
 | **macro avg**    | 0.96      | 0.95   | 0.95     | 1499    |
 | **weighted avg** | 0.96      | 0.95   | 0.95     | 1499    |
 
-**Classification report for test set**
+- **Classification report for test set**
+
 |                  | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
 | 0                | 1.00      | 0.87   | 0.93     | 270     |
@@ -71,9 +73,10 @@
 | **macro avg**    | 0.96      | 0.94   | 0.94     | 643     |
 | **weighted avg** | 0.95      | 0.95   | 0.94     | 643     |
 
-**Confusion matrix**
-![Confusion Matrix](ConfusionMatrix.png)
+- **Confusion matrix**
 
-#### Result Interpretation
+![Confusion Matrix](assets/ConfusionMatrix.png)
+
+### Result Interpretation
 [03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
 1. Results were explained in business language.
