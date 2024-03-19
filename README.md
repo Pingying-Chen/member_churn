@@ -50,10 +50,9 @@
 
 The classification report for training set is:
 |              | precision | recall | f1-score | support |
-|--------------|-----------|--------|----------|---------|
 | 0            | 0.99      | 0.91   | 0.95     | 654     |
 | 1            | 0.93      | 0.99   | 0.96     | 845     |
-| accuracy     |                    | 0.95     | 1499    |
+| accuracy     |           |        | 0.95     | 1499    |
 | macro avg    | 0.96      | 0.95   | 0.95     | 1499    |
 | weighted avg | 0.96      | 0.95   | 0.95     | 1499    |
 
