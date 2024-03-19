@@ -15,18 +15,22 @@
 
 ## Dataset Preparation
 [01DataPrep.ipynb](01DataPrep.ipynb)
-1. Cleaned and merged datasets for data augmentation, feature mapping and extraction.
-2. Used domain knowlegde to augment the member data and balance the churn and unchurn class.
+- Cleaned and merged datasets for data augmentation, feature mapping and extraction.
+- Used domain knowlegde to augment the member data and balance the churn and unchurn class.
+
 ![Data Prep Steps](DataPrepSteps.png)
 
 ## Feature Selection with EDA
 [02EDA.ipynb](02EDA.ipynb)
-1. Further selected features with visualizations and statistical tests.
+- Further selected features with visualizations and statistical tests.
+
 ![Numerical Feature Distributions by Class](NumFeaturebyClass.png)
 ![Categorical Feature Distributions by Class](CatFeaturebyClass.png)
 ![Correlation Heatmap](CorrHeatmap.png)
 
 ## Modeling
+[03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
+
 ### Model Input
 - Dataset: Including demographics and buying behavior data for customers ever joined the membership.
 - Dependent variable: Member_Status(Churn: 1, Unchurn: 0). 
@@ -42,10 +46,9 @@
   - Join_On_Month: Calculated from Joined_On date; Seasonality.
 
 ### Model Selection
-[03ModelCompareInterpret.ipynb](03ModelCompareInterpret.ipynb)
-1. Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy.
+- Built Logistic Regression, Decision Tree, Random Forest, SVM, and KNN classification models for comprehensive comparison and selected Logistic Regression model for its high recall and accuracy.
 ![Metrics on Test Set](MetricCompare.png)
-2. Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
+- Selected logistic regression without regularization as final model and achieved 100% recall for the churn class and 94% accuracy for both classes on the test set.
 
 #### Final Model
 **Classification report for training set**
