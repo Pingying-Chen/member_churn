@@ -87,4 +87,4 @@
 ![Model Coefficients](assets/ModelCoeff.png)
 ![Odds Ratio](assets/OddsRatio.png)
 
-- Interpreted the results with business language
+- Interpreted the results with business language 
