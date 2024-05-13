@@ -4,6 +4,12 @@
 
 *As requested, the datasets provided will not be shared.*
 
+## Project Description
+- **Data Integration & Enhancement:** Resolved data scarcity and class imbalance by integrating transaction and appointment data, enriching the member dataset by 23% and boosting model reliability.
+- **Metric Development & Analysis:** Designed a new 'Membership Exiting Rate' metric due to frequent discontinuations and renewals and Performed data visualization and statistical testing for feature engineering. 
+- **Model Evaluation & Optimization:** Developed analytic pipelines and evaluated various classification models (Logistic Regression, Decision Tree, Random Forest, SVM, KNN), selected Logistic Regression for its outstanding recall and accuracy and fine tuned it with k-fold cross-validation, achieving a recall rate (100%) and an overall accuracy of 94%. 
+- **Stakeholder Engagement:** Translated analytical findings into actionable insights and presented to the stakeholders.
+
 ## 1. Provided Dataset Description
 - **Member:** Partial member records with multiple demographics and membership-related data.
 - **Sales:** Transaction details for massage items with member ID.
